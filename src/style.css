@@ -2,7 +2,7 @@ body{
     background-color: whitesmoke;
 }
 
-.top, head{
+.top, header{
     position: fixed; 
     width: 100%; /* element of width fits to body */
     margin: 0;
@@ -100,5 +100,33 @@ li{
 }
 
 
+/* About page CSS */
 
+header{
+    text-align: left;
+    height: 150px;
+}
+
+header H1 {
+    vertical-align: middle;
+    position: relative;
+    margin-left: 20px;
+}
+
+header p{
+    vertical-align: middle;
+    position: relative;
+    margin-left: 20px;
+}
+
+main table th{
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+main table img{
+    width:300px;
+    display: block;
+}
 
