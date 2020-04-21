@@ -2,7 +2,7 @@ body{
     background-color: whitesmoke;
 }
 
-.top{
+.top, head{
     position: fixed; 
     width: 100%; /* element of width fits to body */
     margin: 0;
