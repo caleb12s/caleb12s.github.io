@@ -70,7 +70,12 @@ ul{
 
 /* Directions */
 .directions ul{
-    list-style: decimal;
+    list-style: none;
+}
+
+.pie_icon{
+    background: url(http://www.cs.washington.edu/education/courses/cse190m/09sp/homework/1/pie_icon.gif) no-repeat;
+    padding-left: 20px;   
 }
 
 .directions ul li ol {
