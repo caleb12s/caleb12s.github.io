@@ -1,3 +1,5 @@
+/* initiate the body part */
+
 body{
 
     background: url(../images/background.png);
@@ -6,6 +8,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
 
 #banner{
     top: 0;
@@ -24,6 +27,8 @@ body > h1{
     text-shadow: 3px 3px #999999 ;
 }
 
+/* div part which is responsible for round shaped bordered element */
+
 #maindiv{
     display: block;
     overflow: auto;
@@ -37,6 +42,8 @@ body > h1{
     height: 100%;
 }
 
+
+
 #imageoverview{
     float: right;
 }
@@ -44,7 +51,7 @@ body > h1{
     /* border-top-right-radius: 20px; */
 }
 
-
+/* Movie information which is floating on the right side of the screen   */
 dl{
     position: relative;
     background-color: #A2B964;
@@ -98,6 +105,8 @@ dd>ul{
     margin-top: 200px;
 }
 
+/* Making two columns for the reviews */
+
 #columnofreview{
     margin-top: 10px;
     background-image: url("../images/background.png");
@@ -138,6 +147,8 @@ footer{
     width: 100%;
     background-color: #A2B964 ;
 }
+
+/* make validator fixed which is relatively position with screen only*/
 
 .validator{
     position: fixed;
