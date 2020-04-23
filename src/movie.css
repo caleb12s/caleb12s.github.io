@@ -95,7 +95,7 @@ dd>ul{
 #columnofreview{
     background-image: url("../images/background.png");
     column-count: 2;
-    column-width: 47%;
+    /* column-width: 47%; */
     column-gap: 20px;
 }
 
