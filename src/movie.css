@@ -1,0 +1,139 @@
+body{
+
+    background: url(../images/background.png);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#banner{
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-image: url("../images/bannerbg.png");
+    text-align: center;
+}
+
+body > h1{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma Verdana sans-serif;
+    text-shadow: 3px 3px #999999 ;
+}
+
+#maindiv{
+    display: block;
+    overflow: auto;
+    background: url(../images/background.png);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 800px;
+    border: 4px solid gray ;
+    border-radius: 20px;
+    height: 100%;
+}
+
+#imageoverview{
+    float: right;
+}
+#imageoverview > img{
+    border-top-right-radius: 20px;
+}
+
+
+dl{
+    position: relative;
+    background-color: #A2B964;
+    width: 250px;
+    clear: right;
+    float: right;
+    bottom: 20px;
+    
+}
+
+dt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    margin-top: 10pt;
+}
+
+dd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+dd>ul{
+    list-style: none;
+}
+
+#criticsreview{
+    position: relative;
+    width: 550px;
+    background-image: url("../images/rbg.png");
+    background-repeat: repeat-x;
+    display: inline-block;
+}
+
+#criticsreview > p{
+    display: inline;
+    position: relative; 
+    color: red;
+    font-size: 48pt;
+    font-weight: bold;
+    bottom: 20px;
+}
+
+#criticsreview > img{
+    border-top-left-radius: 20px;
+}
+
+#columnofreview{
+    background-image: url("../images/background.png");
+    column-count: 2;
+    column-width: 47%;
+    column-gap: 20px;
+}
+
+.reviewborder > img {
+    float: left;
+}
+
+.reviewborder{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.criticsinfo{
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 8pt;
+    margin-bottom: 20pt;
+}
+
+.criticsinfo > img{
+    float: left;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: #A2B964 ;
+}
+
+.validator{
+}
+
+
