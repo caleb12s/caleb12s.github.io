@@ -52,6 +52,7 @@ dl{
     clear: right;
     float: right;
     bottom: 20px;
+    z-index: 1;
     
 }
 
@@ -60,6 +61,7 @@ dt{
     font-weight: bold;
     font-size: 10pt;
     margin-top: 10pt;
+    padding-left: 15pt;
 }
 
 dd{
