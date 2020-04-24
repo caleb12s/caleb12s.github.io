@@ -30,7 +30,7 @@ ul.nav li{
 }
 
 /* Those properties are valid when a screen size is less than 600px */
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){ */
     #row{
         position: relative;
         display: flex;
@@ -55,7 +55,7 @@ ul.nav li{
         background-color: whitesmoke;
         width: 200%;
     }
-}
+/* } */
 
 /* Those properties are valid when a screen size is more than 600px */
 @media screen and (min-width: 600px){
