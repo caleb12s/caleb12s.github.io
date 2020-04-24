@@ -1,0 +1,88 @@
+#header{
+    margin-bottom:0;
+    background-color: lightcyan;
+}
+
+#navmenu{
+    background-color: steelblue;
+}
+
+#navmenu{
+    margin-top: 0;
+}
+
+ul.nav li{
+    border: 1px solid black;
+}
+
+#footer{
+    background-color: steelblue;
+    color:white;
+}
+
+#navmenu li{
+    /* border: 2px solid black; */
+}
+#column p{
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* Those properties are valid when a screen size is less than 600px */
+@media screen and (max-width: 600px){
+    #row{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #column{
+        height: 300px;
+    }
+
+    .col1{
+        background-color:gray;
+        width: 50%;
+    }
+
+    .col2{
+        background-color: darkgray;
+        width: 50%;
+    }
+
+    .col3{
+        background-color: whitesmoke;
+        width: 200%;
+    }
+}
+
+/* Those properties are valid when a screen size is more than 600px */
+@media screen and (min-width: 600px){
+
+    #row{
+        position: relative;
+        display: flex;
+    }
+
+    #column{
+        height: 300px;
+        max-width: 100%;
+    }
+    
+    .col1{
+        background-color:gray;
+        width: 33%;
+    }
+    
+    .col2{
+        background-color: darkgray;
+        width: 34%;
+    }
+    
+    .col3{
+        background-color: whitesmoke;
+        width: 33%;
+    }
+
+}
