@@ -53,7 +53,7 @@ ul.nav li{
 
     .col3{
         background-color: whitesmoke;
-        width:200%;
+        width:100%;
     }
 /* } */
 
@@ -67,7 +67,6 @@ ul.nav li{
 
     #column{
         height: 300px;
-        max-width: 100%;
     }
     
     .col1{
