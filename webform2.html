@@ -18,46 +18,60 @@
         <button>Sign out</button>
     </header>
 
-    <section id = "main">
+    
+
+    <div id = "main">
 
         <h2>New Product Form</h2>
+            <form>
+                <div> 
+                    <label class = "lab">Product Number</label></br>
+                    <input type = "text"/>
+                </div>
 
-            <div> 
-                
-            </div>
+                <div> 
+                    <label>Quantity in stock</label></br>
+                    <input type = "text" value="0"/>
+                </div>
 
+                <div> 
+                    <label>Name</label></br>
+                    <input type = "text"/>
+                </div>
 
-        <!-- <form action = "#">
-            <label>Product Number</label>
-            <label>Product Number</label></br>
-            <div>            
-                <label>Product Number</label></br>
-                <input type = "text"/>
-            </div>
-            <div>
-                <label>Product Number</label></br>
-                <input type = "text"/>
-            </div>
-            <div>            
-                <label>Product Number</label></br>
-                 <input type = "text"/>
-            </div>
-            <div>
-                <label>Product Number</label></br>
-                <input type = "text"/>
-            </div>
-            <div>            
-                <label>Product Number</label></br>
-                <input type = "text"/>
-            </div>
-            <div>            
-                <label>Product Number</label></br>
-                <input type = "text"/>
-            </div>
-             -->
-        </form>
+                <div> 
+                    <label>Supplier:</label></br>
+                    <select id = "suppliers" name = "suppliers">
+                        <option value = "maharishi">Maharishi</option>
+                        <option value = "guru">Guru</option>
+                        <option value = "annapurna">Annapurna</option>
+                    </select>
+                </div>
 
-    </section>
+                <div> 
+                    <label>Unit Price</label></br>
+                    <input type = "text" value = "0.0"/>
+                </div>
+
+                <div> 
+                    <label>Date supplied</label></br>
+                    <input class = "break" type = "text" value = "yyyy-mm-dd"/>
+                    <p>Enter a valid Date.</p>
+                </div>
+                <span></span>
+                <ul>
+                    <li>
+                        <input class = "black "type = "button" value = "Reset"/>
+                    </li>
+                    <li>
+                        <input class = "red" type = "button" value = "Cancel"/>
+                    </li>
+                    <li>
+                        <input class = "blue" type = "button" value = "Add Product"/>
+                    </li>
+                </ul>
+            </form>
+        </div>
 
     <footer>
 
