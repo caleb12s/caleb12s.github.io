@@ -44,3 +44,12 @@ body{
     font-size: 10px;
     margin-bottom: 5px;
 }
+
+/* web form 2 */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: violet;
+}
+
