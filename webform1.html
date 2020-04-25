@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="src/webformdesign.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form 1</title>
+</head>
+<body>
+
+    <div id = "login">
+        <form action = "#">
+            <label>Web address</label></br>
+            <input type = "text" placeholder = "Web url" name = "web" pattern = "https?://.+" title = "Please enter a URL" /></br>
+            <label>Email address</label></br>
+            <input type = "email" placeholder = "Email address" name="email"/></br>
+            <p>We'll never share you email with anyone else.</p>
+            <label>Password</label></br>
+            <input type = "password" placeholder="Password" name="password" pattern="(?=[a-z]*)(?=[A-Z]*).{10,}" title="Password must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters"/></br>
+            <input type = "checkbox"/>
+            <label>Check me out</label><br/>
+            <input type = "submit" value = "Submit" />
+        </form>
+    </div>
+    
+</body>
+</html>
