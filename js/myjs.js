@@ -1,3 +1,5 @@
+// Find max Element
+
 function max(v1, v2) {
     // return Math.max(v1,v2);
 
@@ -7,6 +9,9 @@ function max(v1, v2) {
         return v1;
     }
 }
+
+// Find max Element from three inputs
+
 function maxOfThree(v1,v2,v3){
 
     if(v1<v3 && v2<v3){
@@ -79,9 +84,48 @@ function filterLongWords(words, i){
     // }
     // console.log(filteredWords);
     // return filteredWords;
-    alert(words.filter(w => w.length > i));
     return words.filter(w => w.length > i);
 }
+
+// Function results are displayed on the screen
+
+document.write("<p>Function max</p>");
+document.writeln(testFunctions(5,max(5,3)).toString() + "<br/>");
+
+document.write("<p>Function max three</p>");
+document.writeln(testFunctions(30,maxOfThree(5,30,20)) + "<br/>");
+
+document.write("<p>Function isVowel</p>");
+document.write(testFunctions(true,isVowel('a')) + "<br/>");
+
+document.write("<p>Function sum</p>");
+document.write(testFunctions(100, sum([40,30,30])) + "<br/>");
+
+document.write("<p>Function muytiplu</p>");
+document.write(testFunctions(1000,multiply([10,10,10]))+ "<br/>");
+
+document.write("<p>Function reverse</p>");
+document.write(testFunctions("olleh",reverse("hello"))+ "<br/>");
+
+document.write("<p>Function findLongestWord</p>");
+document.write(testFunctions(8,findLongestWord(["hi","are you!","how"]))+ "<br/>");
+
+document.write("<p>Function filterLongWords</p>");
+var input = new Array('bravo', 'my', 'man', 'amazing');
+var expected = new Array('bravo', 'amazing');
+document.write(testFunctions(expected, filterLongWords(input, 3)));
+
+// Test multiply
+console.log(testFunctions(1000,multiply([10,10,10])));
+
+// Test reverse
+console.log(testFunctions("olleh",reverse("hello")));
+
+// Test findlongestword
+console.log(testFunctions(8,findLongestWord(["hi","are you!","how"])));
+
+
+// Testing functions
 
 function myFunction(){
     const a = [1,3,5,3,3];
@@ -107,16 +151,16 @@ function testFunctions(expected, result){
 
     if (Array.isArray(expected)) { //if array is passed then use JSON.stringify to check if values in an array match
         if (JSON.stringify(expected) === JSON.stringify(result)) {
-            return "SUCCEEDED";
+            return "SUCCEEDED: Because, expected result is "+expected+" result "+result;
         }else{
-            return "FAILED, Because, expected result is "+expected+" result "+result;
+            return "FAILED: Because, expected result is "+expected+" result "+result;
         }
     }
 
     if(expected===result) {
-        return "SUCCEEDED";
+        return "SUCCEEDED: Because, expected result is "+expected+" result "+result;
     }else{
-        return "FAILED, Because, expected result is "+expected+" result "+result;
+        return "FAILED: Because, expected result is "+expected+" result "+result;
     }
 }
 
@@ -142,7 +186,9 @@ console.log(testFunctions("olleh",reverse("hello")));
 console.log(testFunctions(8,findLongestWord(["hi","are you!","how"])));
 
 // Test filterLongWords
-console.log(testFunctions(["hello", "hi"]),filterLongWords(["hello","hi"],1));
+var input = new Array('bravo', 'my', 'man', 'amazing');
+var expected = new Array('bravo', 'amazing');
+console.log(testFunctions(expected, filterLongWords(input, 3)));
 
 function assertFunctions(expected, result){
 
@@ -183,4 +229,6 @@ console.assert(assertFunctions("olleh",reverse("hello")));
 console.assert(assertFunctions(8,findLongestWord(["hi","are you!","how"])));
 
 // Test filterLongWords
-console.assert(assertFunctions(["hello", "hi"]),filterLongWords(["hello","hi"],1));
+var input = new Array('bravo', 'my', 'man', 'amazing');
+var expected = new Array('bravo', 'amazing');
+console.assert(testFunctions(expected, filterLongWords(input, 3)));
