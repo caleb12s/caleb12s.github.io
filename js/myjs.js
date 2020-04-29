@@ -29,7 +29,7 @@ function isVowel(char){
         return false;
     }
     CHAR = char.toUpperCase();
-    if(CHAR==="A"||CHAR==="B"||CHAR==="C"||CHAR==="D"||CHAR==="E"||CHAR==="F"||CHAR==="G"||CHAR==="H"||CHAR==="I"){
+    if(CHAR==="A"||CHAR==="I"||CHAR==="E"||CHAR==="O"||CHAR==="U"){
         return true;
     }
     return false;
@@ -75,15 +75,6 @@ function findLongestWord(words){
 }
 
 function filterLongWords(words, i){
-    // var filteredWords = [];
-    //
-    // for(var j = 0; j < words.length; j++){
-    //     if(words[j].length >= i){
-    //         filteredWords.push(words[j]);
-    //     }
-    // }
-    // console.log(filteredWords);
-    // return filteredWords;
     return words.filter(w => w.length > i);
 }
 
