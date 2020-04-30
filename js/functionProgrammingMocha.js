@@ -1,9 +1,17 @@
 (function(){
 "use strict";
 
+
 let myFunctionsInt = {
 
     arr: [],
+    reverseArray() {
+        var retVal = [];
+        for(var i = this.arr.length-1; i >= 0; i--){
+            retVal.push(this.arr[i]);
+        }
+        return retVal;
+    },
     /**
      * @returns {number} sum of arrays
      */
@@ -83,6 +91,9 @@ describe("arr", function() {
         it("the filterbythree is [7]", function() {
           assert.deepEqual(myFunctionsInt.filterbythree(), [7]);
         });
+        it("the filterLongWords is oranges", () => {
+            assert.equal(exercise1.reverseArray(), [7,3,1]);
+        });
     });
   });
 
@@ -107,7 +118,25 @@ describe("arr", function() {
         it("the filterLongWords is oranges", () => {
           assert.equal(myFunctionsString.filterLongWord(), "world!");
         });
+
     });
 
-  })
+  });
+
+    describe("arr", function() {
+        context("when [1,3,7] entered", function() {
+            beforeEach(function() {
+                exercise1.arr = [1,2,3,4,5];
+            });
+
+            it("[1,2,3,4,5]", function() {
+                assert.equal(exercise1.reverseArray(), [1,2,3,4,5]);
+            });
+
+            it("[1,2,3,4,5]", function() {
+                assert.equal(exercise1.reverseArrayInPlace(), [1,2,3,4,5]);
+            });
+
+        });
+    });
 })();
