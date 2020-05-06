@@ -1,0 +1,27 @@
+function f() {
+  alert("Hello!");
+}
+
+
+
+Function.prototype.defer = function(input){
+
+        setTimeout(this,input);
+
+}
+
+f.defer(1000); // shows "Hello!" after 1 second
+
+function f(a, b) {
+  alert( a + b );
+}
+
+f.defer(1000)(1, 2); // shows 3 after 1 second
+
+Function.prototype.defer = function(input){
+
+        return function(a, b){
+                setTimeout(f.bind(this,a,b),input);
+        }
+
+}
