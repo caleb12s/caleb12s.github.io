@@ -73,8 +73,9 @@ li{
 .center{
     position: relative;
     width: initial;
-    height: 200px;
+    height: 400px;
     text-align: left;
+    overflow: scroll;
 }
 
 .centertext{
