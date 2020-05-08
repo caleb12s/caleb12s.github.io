@@ -1,19 +1,9 @@
 
 #container{
     height: 800px;
-    background-color: bisque;
+    padding-left: 500px;
 }
 
-
-.circles{
-    /* margin-top: 300px; */
-    background-color:black;
-    border: 1px solid black;
-    /* width: 50px;
-    height: 50px; */
-    border-radius: 50%;
-    margin: auto;
-}
 
 
 #control{
