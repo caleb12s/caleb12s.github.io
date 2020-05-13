@@ -6,7 +6,7 @@ if (isset($_GET['animal'])) {
 	$animal = "";
 }	
 
-$files = glob("imgs/$animal*");
+$files = glob("imgs/$animal.jpg");
 
 ?>
 <?php foreach ($files as $file) : ?>
